@@ -1,0 +1,105 @@
+#include <string>
+#include <iostream>
+using namespace std;
+
+
+int main(){
+	string destination;
+	int option;
+	char bookingtype;
+	int departureMonth, departureDay, departureYear;
+	int arrivalMonth, arrivalDay, arrivalYear;
+	
+	
+	
+	cout<<"*************************************************************************************"<<endl;
+	cout<<endl;
+	cout<<"                   WELCOME TO KABAYAN AIRPORT RESERVATION SYSTEM                     "<<endl;
+	cout<<endl;
+	cout<<"*************************************************************************************"<<endl;
+	cout<<endl;
+	cout<<"                                 1. Book Flight"<<endl;
+	cout<<"                                 2. Cancel Flight"<<endl;
+	cout<<"                                 3. Re-book Flight"<<endl;
+	cout<<"                                 4. Kabayan Miles"<<endl;
+	cout<<"                                 5. Exit"<<endl;
+	cout<<endl;
+	cout<<"*************************************************************************************"<<endl;
+	cout<<endl;
+	cout<<"                          Please choose from the options: ";
+	cin>>option;
+	cout<<endl;
+	cout<<"*************************************************************************************"<<endl;
+	cout<<endl;
+	
+	if(option=1){
+		cout<<"                   Is this a one-way or a roundtrip flight?(O/R): ";
+		cin>>bookingtype;
+		
+		cout<<endl;
+		cout<<"*************************************************************************************"<<endl;
+		cout<<endl;
+		if(bookingtype='o'||'O'){
+			cout<<"        1. Albany, NY (ALB)            11. Knoxville, TN (TYS)"<<endl;
+			cout<<"        2. Baltimore, MD (BWI)         12. Long Beach, CA (LGB)"<<endl;
+			cout<<"        3. Cleveland, OH (CLE)         13. Milwaukee, WI (MKE)"<<endl;
+			cout<<"        4. Denver, CO (DEN)            14. New Orleans, LA (MSY)"<<endl;
+			cout<<"        5. El Paso, TX (ELP)           15. Oklahoma City, OK (OKC)"<<endl;
+			cout<<"        6. Fort Myers, FL (RSW)        16. Philadelphia, PA (PHL)"<<endl;
+			cout<<"        7. Grand Rapids, MI (GRR       17. Rochester, NY (ROC)"<<endl;
+			cout<<"        8. Houston, TX (HOU)           18. San Francisco, CA (SFO)"<<endl;
+			cout<<"        9. Indianapolis, IN (IND)      19. Tallahassee, FL (TLH)"<<endl;
+			cout<<"       10. Jacksonville, FL (JAX)      20. Washington DC (WAS)"<<endl;
+			cout<<endl;
+			cout<<"*********************************************************************************"<<endl;
+			cout<<endl;
+		}else{
+			cout<<"        1. Albany, NY (ALB)            11. Knoxville, TN (TYS)"<<endl;
+			cout<<"        2. Baltimore, MD (BWI)         12. Long Beach, CA (LGB)"<<endl;
+			cout<<"        3. Cleveland, OH (CLE)         13. Milwaukee, WI (MKE)"<<endl;
+			cout<<"        4. Denver, CO (DEN)            14. New Orleans, LA (MSY)"<<endl;
+			cout<<"        5. El Paso, TX (ELP)           15. Oklahoma City, OK (OKC)"<<endl;
+			cout<<"        6. Fort Myers, FL (RSW)        16. Philadelphia, PA (PHL)"<<endl;
+			cout<<"        7. Grand Rapids, MI (GRR       17. Rochester, NY (ROC)"<<endl;
+			cout<<"        8. Houston, TX (HOU)           18. San Francisco, CA (SFO)"<<endl;
+			cout<<"        9. Indianapolis, IN (IND)      19. Tallahassee, FL (TLH)"<<endl;
+			cout<<"       10. Jacksonville, FL (JAX)      20. Washington DC (WAS)"<<endl;
+			cout<<endl;
+			cout<<"*********************************************************************************"<<endl;
+			cout<<endl;
+			
+		}
+		cout<<"                          Where is your destination?: ";
+		cin>>destination;
+		cout<<endl;
+		cout<<"*********************************************************************************"<<endl;
+		cout<<endl;
+		cout<<"                         When is your departure date?: "<<endl;
+		cout<<"                                     Month: ";
+		cin>>departureMonth;
+		cout<<"                                       Day: ";
+		cin>>departureDay;
+		cout<<"                                      Year: ";
+		cin>>departureYear;
+		cout<<endl;
+		cout<<"*********************************************************************************"<<endl;
+		cout<<endl;
+		cout<<"                         When is your arrival date?: "<<endl;
+		cout<<"                                     Month: ";
+		cin>>arrivalMonth;
+		cout<<"                                       Day: ";
+		cin>>arrivalDay;
+		cout<<"                                      Year: ";
+		cin>>arrivalYear;
+		cout<<endl;
+		cout<<"*********************************************************************************"<<endl;
+	}
+	cout<<endl;
+	cout<<"*********************************************************************************"<<endl;
+	cout<<"                             ***Flight Details***                                ";
+	cout<<endl;
+	cout<<"                         Destination: "<<destination<<endl;
+	cout<<"                        Booking Type: "<<bookingtype<<endl;
+	cout<<"                           Departure: "<<departureMonth<<"/"<<departureDay<<"/"<<departureYear<<endl;
+	cout<<"                             Arrival: "<<arrivalMonth<<"/"<<arrivalDay<<"/"<<arrivalYear<<endl;
+}
